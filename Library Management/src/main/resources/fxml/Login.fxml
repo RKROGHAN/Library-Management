@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="login-pane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.controllers.LoginController">
+   <children>
+      <!-- Background -->
+      <Rectangle fill="#2c3e50" height="600.0" width="400.0" />
+      
+      <!-- Decorative elements -->
+      <Circle fill="#3498db" opacity="0.1" radius="150.0" stroke="#3498db" strokeOpacity="0.2" strokeWidth="2.0" translateX="300.0" translateY="100.0" />
+      <Circle fill="#e74c3c" opacity="0.1" radius="100.0" stroke="#e74c3c" strokeOpacity="0.2" strokeWidth="2.0" translateX="50.0" translateY="450.0" />
+      
+      <!-- Main content -->
+      <VBox fx:id="loginForm" alignment="CENTER" spacing="20.0" styleClass="login-form">
+         <children>
+            <!-- Header -->
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label styleClass="app-title" text="📚 Library Management" />
+                  <Label styleClass="app-subtitle" text="Modern Library System" />
+               </children>
+            </VBox>
+            
+            <!-- Login form -->
+            <VBox alignment="CENTER" spacing="15.0" styleClass="form-container">
+               <children>
+                  <JFXTextField fx:id="usernameField" focusColor="#3498db" labelFloat="true" promptText="Username" styleClass="form-field" unFocusColor="#bdc3c7">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  
+                  <JFXPasswordField fx:id="passwordField" focusColor="#3498db" labelFloat="true" promptText="Password" styleClass="form-field" unFocusColor="#bdc3c7">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXPasswordField>
+                  
+                  <Label fx:id="errorLabel" styleClass="error-label" text="Invalid credentials" visible="false" />
+                  
+                  <JFXButton fx:id="loginButton" buttonType="RAISED" prefHeight="45.0" prefWidth="200.0" ripplerFill="#ffffff" styleClass="login-button" text="Login">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            
+            <!-- Footer -->
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label styleClass="footer-text" text="Default: admin / admin123" />
+                  <JFXButton fx:id="exitButton" buttonType="RAISED" prefHeight="35.0" prefWidth="100.0" ripplerFill="#ffffff" styleClass="exit-button" text="Exit">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="50.0" left="40.0" right="40.0" top="50.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

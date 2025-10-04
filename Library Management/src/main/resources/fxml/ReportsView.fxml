@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="reportsPane" prefHeight="620.0" prefWidth="950.0" styleClass="books-pane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <!-- Header -->
+      <AnchorPane prefHeight="80.0" prefWidth="950.0" styleClass="view-header">
+         <children>
+            <Label layoutX="20.0" layoutY="20.0" styleClass="view-title" text="📊 Reports &amp; Analytics" />
+            <Label layoutX="20.0" layoutY="45.0" styleClass="view-subtitle" text="Generate reports and view analytics" />
+         </children>
+      </AnchorPane>
+      
+      <!-- Content -->
+      <AnchorPane layoutY="80.0" prefHeight="540.0" prefWidth="950.0" styleClass="content-pane">
+         <children>
+            <VBox alignment="CENTER" spacing="30.0" styleClass="reports-content">
+               <children>
+                  <Label styleClass="dashboard-title" text="Reports &amp; Analytics" />
+                  <Label styleClass="dashboard-subtitle" text="Generate comprehensive reports for your library" />
+                  
+                  <!-- Report cards -->
+                  <HBox alignment="CENTER" spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER" spacing="10.0" styleClass="report-card">
+                           <children>
+                              <Label styleClass="report-icon" text="📚" />
+                              <Label styleClass="report-title" text="Books Report" />
+                              <Label styleClass="report-description" text="Generate detailed books inventory report" />
+                              <JFXButton buttonType="RAISED" prefHeight="35.0" prefWidth="120.0" ripplerFill="#ffffff" styleClass="report-button" text="Generate">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        
+                        <VBox alignment="CENTER" spacing="10.0" styleClass="report-card">
+                           <children>
+                              <Label styleClass="report-icon" text="👥" />
+                              <Label styleClass="report-title" text="Users Report" />
+                              <Label styleClass="report-description" text="Generate users and activity report" />
+                              <JFXButton buttonType="RAISED" prefHeight="35.0" prefWidth="120.0" ripplerFill="#ffffff" styleClass="report-button" text="Generate">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        
+                        <VBox alignment="CENTER" spacing="10.0" styleClass="report-card">
+                           <children>
+                              <Label styleClass="report-icon" text="📖" />
+                              <Label styleClass="report-title" text="Transactions Report" />
+                              <Label styleClass="report-description" text="Generate issue/return transactions report" />
+                              <JFXButton buttonType="RAISED" prefHeight="35.0" prefWidth="120.0" ripplerFill="#ffffff" styleClass="report-button" text="Generate">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        
+                        <VBox alignment="CENTER" spacing="10.0" styleClass="report-card">
+                           <children>
+                              <Label styleClass="report-icon" text="⚠️" />
+                              <Label styleClass="report-title" text="Overdue Report" />
+                              <Label styleClass="report-description" text="Generate overdue books report" />
+                              <JFXButton buttonType="RAISED" prefHeight="35.0" prefWidth="120.0" ripplerFill="#ffffff" styleClass="report-button" text="Generate">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  
+                  <!-- Export options -->
+                  <VBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <Label styleClass="section-title" text="Export Options" />
+                        <HBox alignment="CENTER" spacing="15.0">
+                           <children>
+                              <JFXButton buttonType="RAISED" prefHeight="40.0" prefWidth="120.0" ripplerFill="#ffffff" styleClass="export-button" text="📄 PDF Export">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton buttonType="RAISED" prefHeight="40.0" prefWidth="120.0" ripplerFill="#ffffff" styleClass="export-button" text="📊 Excel Export">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

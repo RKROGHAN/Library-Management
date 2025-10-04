@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="settingsPane" prefHeight="620.0" prefWidth="950.0" styleClass="books-pane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <!-- Header -->
+      <AnchorPane prefHeight="80.0" prefWidth="950.0" styleClass="view-header">
+         <children>
+            <Label layoutX="20.0" layoutY="20.0" styleClass="view-title" text="⚙️ Settings" />
+            <Label layoutX="20.0" layoutY="45.0" styleClass="view-subtitle" text="Configure system settings and preferences" />
+         </children>
+      </AnchorPane>
+      
+      <!-- Content -->
+      <AnchorPane layoutY="80.0" prefHeight="540.0" prefWidth="950.0" styleClass="content-pane">
+         <children>
+            <VBox alignment="CENTER" spacing="30.0" styleClass="settings-content">
+               <children>
+                  <Label styleClass="dashboard-title" text="System Settings" />
+                  <Label styleClass="dashboard-subtitle" text="Customize your library management system" />
+                  
+                  <!-- Settings cards -->
+                  <HBox alignment="CENTER" spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER" spacing="15.0" styleClass="settings-card">
+                           <children>
+                              <Label styleClass="settings-icon" text="🎨" />
+                              <Label styleClass="settings-title" text="Appearance" />
+                              <Label styleClass="settings-description" text="Customize theme and appearance" />
+                              <JFXComboBox promptText="Select Theme" styleClass="settings-combo">
+                                 <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                       <String fx:value="Light Theme" />
+                                       <String fx:value="Dark Theme" />
+                                       <String fx:value="Auto" />
+                                    </FXCollections>
+                                 </items>
+                              </JFXComboBox>
+                           </children>
+                        </VBox>
+                        
+                        <VBox alignment="CENTER" spacing="15.0" styleClass="settings-card">
+                           <children>
+                              <Label styleClass="settings-icon" text="📧" />
+                              <Label styleClass="settings-title" text="Notifications" />
+                              <Label styleClass="settings-description" text="Configure notification settings" />
+                              <VBox alignment="CENTER" spacing="10.0">
+                                 <children>
+                                    <CheckBox text="Email notifications" />
+                                    <CheckBox text="Overdue alerts" />
+                                    <CheckBox text="System updates" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        
+                        <VBox alignment="CENTER" spacing="15.0" styleClass="settings-card">
+                           <children>
+                              <Label styleClass="settings-icon" text="🔒" />
+                              <Label styleClass="settings-title" text="Security" />
+                              <Label styleClass="settings-description" text="Security and privacy settings" />
+                              <VBox alignment="CENTER" spacing="10.0">
+                                 <children>
+                                    <JFXButton buttonType="RAISED" prefHeight="35.0" prefWidth="150.0" ripplerFill="#ffffff" styleClass="settings-button" text="Change Password">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" prefHeight="35.0" prefWidth="150.0" ripplerFill="#ffffff" styleClass="settings-button" text="Privacy Settings">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  
+                  <!-- System info -->
+                  <VBox alignment="CENTER" spacing="15.0" styleClass="system-info">
+                     <children>
+                        <Label styleClass="section-title" text="System Information" />
+                        <HBox alignment="CENTER" spacing="30.0">
+                           <children>
+                              <VBox alignment="CENTER" spacing="5.0">
+                                 <children>
+                                    <Label styleClass="info-label" text="Version" />
+                                    <Label styleClass="info-value" text="1.0.0" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" spacing="5.0">
+                                 <children>
+                                    <Label styleClass="info-label" text="Database" />
+                                    <Label styleClass="info-value" text="MySQL 8.0" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" spacing="5.0">
+                                 <children>
+                                    <Label styleClass="info-label" text="JavaFX" />
+                                    <Label styleClass="info-value" text="17.0.2" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  
+                  <!-- Action buttons -->
+                  <HBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" prefHeight="40.0" prefWidth="120.0" ripplerFill="#ffffff" styleClass="save-button" text="💾 Save Settings">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" prefHeight="40.0" prefWidth="120.0" ripplerFill="#ffffff" styleClass="reset-button" text="🔄 Reset">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

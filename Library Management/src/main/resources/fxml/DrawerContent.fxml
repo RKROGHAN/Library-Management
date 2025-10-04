@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="drawerContent" prefHeight="620.0" prefWidth="250.0" styleClass="drawer-content" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <!-- Header -->
+      <VBox alignment="CENTER" spacing="10.0" styleClass="drawer-header">
+         <children>
+            <Label styleClass="drawer-title" text="📚 Library" />
+            <Label styleClass="drawer-subtitle" text="Management System" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+         </padding>
+      </VBox>
+      
+      <!-- Navigation menu -->
+      <VBox alignment="CENTER_LEFT" spacing="5.0" styleClass="navigation-menu">
+         <children>
+            <JFXButton fx:id="booksButton" alignment="CENTER_LEFT" buttonType="RAISED" prefHeight="45.0" prefWidth="230.0" ripplerFill="#ffffff" styleClass="nav-button" text="📚 Books Management">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            
+            <JFXButton fx:id="usersButton" alignment="CENTER_LEFT" buttonType="RAISED" prefHeight="45.0" prefWidth="230.0" ripplerFill="#ffffff" styleClass="nav-button" text="👥 Users Management">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            
+            <JFXButton fx:id="transactionsButton" alignment="CENTER_LEFT" buttonType="RAISED" prefHeight="45.0" prefWidth="230.0" ripplerFill="#ffffff" styleClass="nav-button" text="📖 Issue/Return">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            
+            <JFXButton fx:id="reportsButton" alignment="CENTER_LEFT" buttonType="RAISED" prefHeight="45.0" prefWidth="230.0" ripplerFill="#ffffff" styleClass="nav-button" text="📊 Reports &amp; Analytics">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            
+            <JFXButton fx:id="settingsButton" alignment="CENTER_LEFT" buttonType="RAISED" prefHeight="45.0" prefWidth="230.0" ripplerFill="#ffffff" styleClass="nav-button" text="⚙️ Settings">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+         </padding>
+      </VBox>
+      
+      <!-- Footer -->
+      <VBox alignment="CENTER" spacing="10.0" styleClass="drawer-footer">
+         <children>
+            <Separator />
+            <JFXButton fx:id="logoutButton" buttonType="RAISED" prefHeight="40.0" prefWidth="200.0" ripplerFill="#ffffff" styleClass="logout-button" text="🚪 Logout">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>
